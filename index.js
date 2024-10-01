@@ -3,6 +3,8 @@ const getcolor = ()=>{
     const randomcode = "#"+ randomnumber.toString(16);
     document.body.style.backgroundColor = randomcode;
     document.getElementById("color-code").innerText = randomcode;
+
+    navigator.clipboard.writeText(randomcode)
 }
 
 
